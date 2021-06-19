@@ -192,7 +192,7 @@ window.location='transactionDetails.php';
         </form>
     </div>
     <footer class="container-fluid bg-4 text-center">
-    <p> Copyright © 2020 HP</p>
+    <p> Copyright © 2021 ATSparks</p>
     <p>ATSparks Management System</p>
 
    <p>Powered by The Sparks Foundation</p>
