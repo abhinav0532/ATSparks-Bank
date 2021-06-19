@@ -27,7 +27,7 @@ if(isset($_POST['submit']))
         echo '</script>';
     }
 
-  
+
  else if($amnt == 0)
  {
      echo "<script type='text/javascript'>alert('Enter Amount Greater than Zero');</script>";
@@ -71,15 +71,26 @@ window.location='transactionDetails.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amount Transfer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <style>
     .bg-4 {
     background-color: #2f2f2f;
     color: #fff;
     padding-top: 40px;
+
     padding-bottom: 40px;
+  }
+  .navbar{
+    padding: 20px;
+  }
+
+  .nav-link:hover{
+    color: red;
+
+  }
+  a:hover {
+    background-color:lightgreen;
   }
     </style>
 </head>
@@ -87,24 +98,34 @@ window.location='transactionDetails.php';
 
 <body class="indexPage">
 
-<nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="./index.php">ATSparks</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="./index.php">Home</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Services <spanclass="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="./viewusers.php"> Customer Details </a></li>
-                        <li><a href="./transactionDetails.php"> Credit History </a></li>
-                    </ul>
-                </li>
-                <li><a href="./aboutus.html">About Us</a></li>
 
-            </ul>
-        </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.php">ATSparks</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="./viewusers.php"> Transact </a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="./transactionDetails.php"> Txn History </a></li>
+        </ul>
+      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutus.html">About Us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
     <div class="container">
         <h1 style="color: #c06565">Amount Transfer Process</h1>
         <form method="post" name="tcredit"><br/>

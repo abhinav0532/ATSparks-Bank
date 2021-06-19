@@ -26,6 +26,7 @@
 
 </head>
 
+
 <body>
       <!-- navbar starts here  -->
 <section id="nava">

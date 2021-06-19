@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhinav Tripathi</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <style>
     .bg-4 {
     background-color: #2f2f2f;
@@ -22,32 +25,95 @@
   max-width: 85% ;
   height: auto ;
 }
+.navbar{
+  padding: 20px;
+}
 
+body {
+  font-family: "Montserrat";
+}
+#Middle{
+position:auto;
+}
+ul{
+  list-style: none;
+}
+#title {
+  text-align: center;
+  background-color: red;
+}
+h1 {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h3 {
+  font-family: "Montserrat-Bold";
+  font-size: 1.5rem;
+}
+h4 {
+  font-family: "Montserrat-Bold";
+  font-size: 1.25rem;
+}
+
+p {
+  color: #8f8f8;
+}
+.nav-item{
+  font-size: 1.25rem;
+  font-family: Montserrat-Bold;
+}
+.nav-link:hover{
+  color: red;
+
+}
+a:hover {
+  background-color:lightgreen;
+}
     </style>
 </head>
 
 <body class="indexPage">
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="./index.php">ATSparks</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="./index.php">Home</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Services <span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="./viewusers.php"> Transact </a></li>
-                        <li><a href="./transactionDetails.php"> Txn History </a></li>
-                    </ul>
-                </li>
-                <li><a href="./aboutus.html">About Us</a></li>
 
-            </ul>
-        </div>
-    </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.php">ATSparks</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="./viewusers.php"> Transact </a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="./transactionDetails.php"> Txn History </a></li>
+      </ul>
+    </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./aboutus.html">About Us</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+
     <div class="container-fluid">
-        <marquee><h1 style="text-align: center;"><b><span class="glow">WELCOME TO ATSparks Banking</span></b></h1></marquee>
+        <marquee><h2 style="text-align: center;"><b><span class="glow">WELCOME TO ATSparks Banking</span></b></h2></marquee>
         <h3 style="text-align: center; color: #b32372;"><b>STAY SAFE! CREDIT SAFE!</b></h3>
         <div class="row">
           <div class="col-lg-5 img-about" >
@@ -58,8 +124,8 @@
            <h4><b> Created By:</b></h4>
            <h5>Abhinav Tripathi</h5>
            <h5><b>I'm Web Development and Design Intern at The Sparks Foundation</b></h5>
-           <p>Welcome you all to Sparks Credit Management System.<br/> Our aim is simple easy banking system which help to transfer your credit easily. Transaction History is easy to view for every customer.</p>
-           <p>Simple dynamic website which has the following specs.<br/>Start with creating a dummy data in database for upto 10 customers.</p>
+           <h6>Welcome you all to Sparks Credit Management System.<br/> Our aim is simple easy banking system which help to transfer your credit easily. Transaction History is easy to view for every customer.</h6>
+           <h6>Simple dynamic website which has the following specs.<br/>Start with creating a dummy data in database for upto 10 customers.</h6>
           </div>
         </div>
       </div>
